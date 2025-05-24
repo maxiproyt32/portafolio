@@ -1,5 +1,5 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #f0f2f5;
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ body {
 header.main-header {
   background-color: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  padding: 40px 20px;
+  padding: 20px 15px;
   text-align: center;
   border-radius: 0 0 10px 10px;
   transition: background-color 0.3s ease;
@@ -25,14 +25,16 @@ header.main-header {
 }
 
 header.main-header h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #4b0082;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  font-weight: 700;
 }
 
 header.main-header p {
-  font-size: 1.2rem;
-  color: #666;
+  font-size: 1.1rem;
+  color: #555;
+  margin: 0;
 }
 
 .dark-mode header.main-header {
@@ -44,11 +46,11 @@ header.main-header p {
 #portfolio,
 #videos,
 #contact {
-  margin: 40px 20px;
+  margin: 30px 15px;
   background-color: #ffffff;
   padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
 }
 
@@ -74,10 +76,11 @@ header.main-header p {
   border-radius: 10px;
   transition: transform 0.3s, background-color 0.3s;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-weight: 500;
 }
 
 .item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
   background-color: #dddddd;
 }
 
@@ -97,7 +100,8 @@ header.main-header p {
 
 .videos iframe {
   border: 4px solid #4b0082;
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -109,12 +113,24 @@ footer {
 }
 
 @media (max-width: 768px) {
+  header.main-header h1 {
+    font-size: 1.6rem;
+  }
+
+  header.main-header p {
+    font-size: 1rem;
+  }
+
   .item {
     flex: 1 1 calc(50% - 20px);
   }
 }
 
 @media (max-width: 500px) {
+  header.main-header {
+    padding: 15px 10px;
+  }
+
   .item {
     flex: 1 1 100%;
   }
@@ -127,8 +143,23 @@ footer {
 
 button {
   transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  background-color: #4b0082;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
 }
 
+button:hover {
+  background-color: #371263;
+}
+
+.dark-mode button {
+  background-color: #333;
+  color: #fff;
+}
 .dark-mode button {
   background-color: #333;
   color: #fff;

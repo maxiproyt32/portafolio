@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   const toggleBtn = document.getElementById("toggleModeBtn");
   toggleBtn.addEventListener("click", () => {
